@@ -68,4 +68,9 @@ n=10 swaps = 10*11/2 = 55
 n=20 swaps = 20*21/2 = 210
 n=50 swaps = 50*51/2 = 1275
 ```
-This supports our hypothesis that the formula is O(n^2), as O(n*(n+1)/2) simplifies to O(n^2)
+This supports my hypothesis that the formula is O(n^2), as O(n*(n+1)/2) simplifies to O(n^2)
+
+# Possible Improvements
+One main improvement is keeping track of how many black pieces there are in row on the left side of the array, and keeping track of how many white pieces. We would have two variables black_index and white_index, which start at 0 and 2n-1, respectively. Instead of interating through the entire array, we'd only go through the portions that are incomplete, reducing the number of elements to check. 
+
+Keeping track of the indexes would have a second benefit of allowing us to have an easier success check that doesn't require iterating through the array. When the black_index reaches n, then the algorithm has finished. This reduces the success check to O(1).
