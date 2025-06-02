@@ -12,6 +12,7 @@ This program implements an alternating disk algorithm that sorts a sequence of a
    ```
 
 # Pseudocode of Algorithm.
+```
 def alternating disk_alg(n, S): 
     if n == 1: # base case 
         S[i], S[i+1] = 1, 0
@@ -33,6 +34,7 @@ def alternating disk_alg(n, S):
             break
 
     return S, swaps
+```
 
 Note: Since the algorithm didn't state how to check for completion, I wrote my own which checks the n elements on the left side of the algorithm.
 
