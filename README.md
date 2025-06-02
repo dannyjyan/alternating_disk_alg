@@ -2,7 +2,7 @@
 
 This program implements an alternating disk algorithm that sorts a sequence of alternating black and white disks by moving all black disks to the left side using a series of left-to-right and right-to-left passes, with a time complexity of O(n²) and requiring exactly n(n+1)/2 swaps in the worst case.
 
-## How to use it
+## How to run it
 
 1. Save the Python file to your computer
 2. Create a text file with some code in it
