@@ -51,17 +51,19 @@ O(2n)+O(2n)+O(n) operations
 = O(n^2)
 
 # Results
+```
 n=1 swaps=1
 n=2 swaps=3
 n=3 swaps=6
 n=4 swaps=10
 n=5 swaps=15
-
+```
 The number of swaps seems to follow the formula n * (n+1) / 2.
 verifying with larger numbers, this seems to be the case.
 
+```
 n=10 swaps = 10*11/2 = 55
 n=20 swaps = 20*21/2 = 210
 n=50 swaps = 50*51/2 = 1275
-
+```
 This supports our hypothesis that the formula is O(n^2), as O(n*(n+1)/2) simplifies to O(n^2)
